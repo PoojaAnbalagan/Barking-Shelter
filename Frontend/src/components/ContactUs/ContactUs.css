@@ -1,0 +1,135 @@
+
+
+.content {
+    margin: 30px;
+    padding: 20px;
+    animation: fadein 1s ease-in-out;
+
+ 
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.topic-1{
+     position: absolute; 
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, 50%);  
+  font-size: 75px;  
+}
+
+.contact-img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(202, 195, 195, 0.5);    
+    filter: blur(3px);
+}
+
+.topic-des {
+    position: absolute; 
+    top: 90%;
+    left: 50%; 
+    right: -80%;
+    transform: translate(-50%, 50%);  
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: justify;
+    font-style: italic;
+}
+
+.form-1{
+    margin:70px;
+    padding: 20px;
+    background-color: #800d0d;
+    color: white;
+    line-height: 50px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 50px;
+    border:#f2f2f2 8px  solid;
+    box-shadow: 0px 0px 10px 10px rgba(167, 161, 161, 0.5);
+}
+
+#name,
+#mail,
+#message{
+    width: 40%;
+    height: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #f2f2f2;
+    font-size: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+
+#message{
+    height: 100px;
+
+}
+
+label{
+    font-size: 25px;
+    margin-bottom: 10px;
+    display: flex;
+    color: #f2f2f2;
+    font-weight: bold;
+    text-align: center;
+    margin-left:46% ;
+}
+
+.B1{
+    background-color: #f2f2f2;
+    color: #800d0d;
+    font-size: 20px;
+    padding: 20px;
+    border: none;
+    gap: 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 40px;
+    transition: all 0.5s ease;
+}
+
+.B1:hover{
+    background-color: #800d0d;
+    color: #f2f2f2;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+
+}
+
+.success-message {
+  color: green;
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #e6ffe6;
+  border-radius: 4px;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #ffebeb;
+  border-radius: 4px;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  margin-left: 40%;
+}
+

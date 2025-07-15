@@ -1,0 +1,19 @@
+ 
+ 
+ /* for all the components in the jsx file */
+
+ @import url('https://fonts.googleapis.com/css?family=Amaranth');
+
+*{
+    margin-bottom: 5px;
+    padding:0;
+    font-family:'Amaranth', sans-serif;
+    color:#5a1f0c;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+

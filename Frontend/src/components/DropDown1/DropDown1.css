@@ -1,0 +1,80 @@
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown toggle button */
+.dropdown-toggle {
+  background: transparent;
+  border: none;
+  margin-top: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  list-style-type: none;
+  font-size: 19px;
+}
+
+
+
+/* Dropdown menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color:#4e1c0b ;
+  min-width: 200px;
+  border-radius: 4px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1000;
+  list-style: none;
+  padding: 0.5rem 0;
+ 
+  margin: 0;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Dropdown items */
+.dropdown-item {
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-link {
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  display: block;
+  transition: all 0.2s ease;
+  /* text-align: center; */
+}
+
+.dropdown-link:hover {
+  transition: all 0.2s ease;
+  margin:15px;
+
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .dropdown {
+    width: 100%;
+  }
+  
+  .dropdown-menu {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+  }
+}
